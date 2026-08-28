@@ -1,3 +1,27 @@
-storage/
+# Binary hasil build
+/bulk-image-api
+/bulk-image-api.exe
 *.exe
+*.exe~
+*.test
+
+# File upload & hasil proses user -- ini data runtime, bukan source code,
+# jangan ikut ke-commit (bisa besar & berubah terus tiap ada yang upload)
+/storage/
+
+# Environment variables / secrets (kalau nanti pakai file .env)
 .env
+.env.local
+
+# File scratch buat testing manual, isinya bisa berubah-ubah tiap kamu tes
+test.http
+test.jpg
+*.http
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS-specific
+Thumbs.db
+.DS_Store
